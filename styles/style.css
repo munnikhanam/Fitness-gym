@@ -182,7 +182,7 @@ p {
 }
 .banner-part-image .banner-video {
   top: 12%;
-  right: 10px;
+  right: 8px;
 }
 .banner-part-image .banner-tutorial {
   bottom: 10%;
@@ -246,6 +246,62 @@ p {
   height: 100%;
   border-radius: 18px;
 }
+/* BMI-part-style */
+#BMI-part {
+  background: rgb(34, 34, 34);
+  padding: 30px 0;
+}
+.bmi-calculate-part {
+  justify-content: space-between;
+  align-items: center;
+}
+.bmi-tittle {
+  max-width: 670px;
+  margin: 40px auto;
+}
+.bmi-chart {
+  max-width: 50%;
+  margin-right: 20px;
+}
+
+.bmi-chart table,
+th {
+  color: #ffffff;
+  border: 1px solid #ffffff80;
+  border-collapse: collapse;
+  padding: 10px 30px;
+}
+
+.bmi-chart table,
+tr,
+td {
+  border: 1px solid #ffffff80;
+  border-collapse: collapse;
+  color: #ffffff80;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 15px 50px;
+}
+.bmi-measure {
+  max-width: 50%;
+  text-align: left;
+}
+.bmi-measure input {
+  border-radius: 8px;
+  padding: 12px 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border: none;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.activity {
+  display: block;
+  padding: 12px 50px;
+}
+
 /* team-part-styles */
 #team-part {
   margin: 50px 0;
@@ -289,6 +345,30 @@ p {
   font-weight: 400;
   line-height: 15px;
   letter-spacing: 0.5px;
+}
+/* improvement-part */
+.improvement-tittle {
+  max-width: 670px;
+  margin: 10px auto;
+  text-align: center;
+}
+.improvement-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.improvement-card {
+  border-left: 2px solid red;
+  border-radius: 18px;
+  background: rgb(34, 34, 34);
+  padding: 10px 20px;
+}
+.improve-icon {
+  color: #ffffff;
+  font-size: 2.5rem;
+}
+.improvement-card h5 {
+  margin-top: 10px;
 }
 /* footer-part */
 
@@ -360,15 +440,16 @@ footer .right-part span {
     width: 100%;
     height: 100vh;
     position: fixed;
-    top: 15%;
+    top: 10%;
     right: -100%;
     z-index: 100;
-    background-color: rgb(244, 235, 235);
+    background-color: #222222;
     transition: all 0.15s ease-in-out;
   }
   .open-menu,
   .close-menu {
     display: block;
+    color: #ffffff;
   }
   .menu li {
     margin-top: 40px;
@@ -376,6 +457,7 @@ footer .right-part span {
   .menu li a {
     padding: 10px;
   }
+
   #check:checked ~ .menu {
     right: 0%;
   }
@@ -403,7 +485,7 @@ footer .right-part span {
   }
   .banner-part-image .banner-video {
     top: 36%;
-    right: 20px;
+    right: 10px;
   }
   .banner-part-image .banner-tutorial {
     left: 10px;
@@ -432,9 +514,35 @@ footer .right-part span {
   .running-picture {
     width: 100%;
   }
+  /* bmi-part */
+  .bmi-tittle {
+    text-align: center;
+  }
+  .bmi-chart {
+    text-align: center;
+  }
+  table {
+    width: 100%;
+  }
+  .bmi-calculation-tittle {
+    text-align: center;
+    margin: 20px 0;
+  }
+  .bmi-calculate-part {
+    flex-direction: column;
+  }
   /* team-part */
   .team-gallery {
     grid-template-columns: 1fr;
+  }
+  /* improvement-card */
+  .improvement-cards {
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+  .improvement-card {
+    margin-left: 10px;
+    width: 100%;
   }
   /* footer-part */
   .footer-content {
