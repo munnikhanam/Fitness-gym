@@ -95,7 +95,9 @@ p {
 }
 
 .menu li {
-  padding-left: 30px;
+  margin-left: 30px;
+
+  border-radius: 46px;
 }
 .menu li a {
   display: inline-block;
@@ -105,6 +107,12 @@ p {
   color: rgb(255, 255, 255);
   font-size: 1.12rem;
   font-weight: 400;
+  padding: 8px 20px 8px 20px;
+}
+.menu li a:hover,
+.active {
+  border-radius: 46px;
+  background: rgb(230, 83, 60);
 }
 .open-menu,
 .close-menu {
