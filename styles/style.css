@@ -28,7 +28,7 @@
   color: #ffffff;
 }
 .logo a {
-  color: rgb(230, 83, 60);
+  color: #e6533c;
   font-style: italic;
   font-size: 2.12rem;
   font-weight: 800;
@@ -358,7 +358,7 @@ td {
   gap: 20px;
 }
 .improvement-card {
-  border-left: 2px solid red;
+  border-left: 2px solid #e6533c;
   border-radius: 18px;
   background: rgb(34, 34, 34);
   padding: 10px 20px;
